@@ -16,41 +16,51 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+
     <!-- HEADER SECTION -->
     <header>
-        <!-- Top nav bar -->
-        <nav>
-            <p class="logo">Summit</p>
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="titleCard">
-            <h1>Welcome to <span>Summit</span></h1>
+        <div class="wrapper">
+            <!-- Top nav bar -->
+            <nav class="topNavBar">
+                <p class="logo">Summit</p>
+            
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="titleCard">
+                <h1>Welcome to <span>Summit</span></h1>
+            </div>
+            
+            <nav class="socialLinks">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-label="facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" aria-label="instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-label="linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter" aria-label="facebook"></i></a></li>
+                </ul>
+                
+            </nav>
         </div>
-
-        <nav class="socialLinks">
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        </nav>
+        
     </header>
 
     <!-- MAIN SECTION -->
     <main>
         <!-- ABOUT SECTION -->
         <section class="about">
-            <h2>About Summit</h2>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores distinctio quo consequuntur quas harum recusandae excepturi numquam. Amet voluptates doloribus non animi ipsa corporis sapiente, voluptas, quis quidem ad maxime.</p>
-
-            <button>Find out more</button>
+            <div class="wrapper">
+                <h2>About Summit</h2>
+                
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores distinctio quo consequuntur quas harum recusandae excepturi numquam. Amet voluptates doloribus non animi ipsa corporis sapiente, voluptas, quis quidem ad maxime.</p>
+                
+                <button>Find out more</button>
+            </div>
         </section>
         
         <!-- GALLERY INFO SECTION -->
@@ -62,9 +72,12 @@
                 </div>
                 
                 <div class="galleryInfo">
-                    <h3>Peak Photos</h3>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, libero.</p>
-                     <button>Read more</button>
+                    <div class="wrapper">
+                        <h3>Peak Photos</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, libero.</p>
+                        <button>Read more</button>
+                    </div>
+                    
                 </div>   
             </article>
 
@@ -75,48 +88,67 @@
                 </div>
                 
                 <div class="galleryInfo">
-                    <h3>Packing Essentials</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, libero.</p>
-                    <button>Read more</button>
+                    <div class="wrapper">
+                        <h3>Packing Essentials</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, libero.</p>
+                        <button>Read more</button>
+                    </div>
+                    
                 </div>
             </article>
         </section>
 
         <!-- ICON NAV LINK SECTION -->
         <section class="iconNav">
-            <nav>
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-images"></i>Gallery</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i>About</a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i></i>Contact</a></li>
-                </ul>
-            </nav>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-images" aria-hidden="true"></i>Gallery</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i>About</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope" aria-hidden="true"></i></i>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </section>
 
         <!-- ABOUT ME SECTION -->
         <section class="aboutMe">
-            <div class="aboutMeImg">
-                <img src="./summit-assets/asset-7.png" alt="Blonde woman smiling at the camera">
-            </div>
-
-            <div class="aboutMeInfo">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sint labore sequi possimus sapiente enim. Quisquam eos quaerat sapiente ratione neque soluta unde, fuga aliquid deleniti est error quod! Libero aliquid debitis enim architecto, culpa quidem, accusantium nam ex sapiente laborum obcaecati. Ab rerum quas fugit sapiente voluptas ducimus et nisi cupiditate odio, neque obcaecati enim praesentium nesciunt odit amet voluptatem. Aliquid ea alias iste neque vero odit dolorum sapiente fugiat, a doloremque laboriosam illum, totam sed, porro voluptatibus dignissimos consectetur voluptatem suscipit itaque modi delectus. Facilis minima ullam quis.</p>
-                <button>Find out more</button>
+            <div class="wrapper">
+                <div class="aboutMeImg">
+                    <img src="./summit-assets/asset-7.png" alt="Blonde woman smiling at the camera">
+                </div>
+                
+                <div class="aboutMeInfo">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sint labore sequi possimus sapiente enim.
+                        Quisquam eos quaerat sapiente ratione neque soluta unde, fuga aliquid deleniti est error quod! Libero aliquid
+                        debitis enim architecto, culpa quidem, accusantium nam ex sapiente laborum obcaecati. Ab rerum quas fugit
+                        sapiente voluptas ducimus et nisi cupiditate odio, neque obcaecati enim praesentium nesciunt odit amet
+                        voluptatem. Aliquid ea alias iste neque vero odit dolorum sapiente fugiat, a doloremque laboriosam illum, totam
+                        sed, porro voluptatibus dignissimos consectetur voluptatem suscipit itaque modi delectus. Facilis minima ullam
+                        quis.</p>
+                    <button>Find out more</button>
+                </div>
             </div>
         </section>
 
         <!-- GALLERY SECTION -->
         <section class="gallery">
-            <img src="./summit-assets/asset-4.jpg" alt="Far shot of the forest and mountains">
-            <img src="./summit-assets/asset-4.jpg" alt="Snowy mountain with a gray sky">
-            <img src="./summit-assets/asset-6.jpg" alt="Far shot of snowy mountains over a large body of water">
+            <div class="wrapper">
+                <ul>
+                    <li><img src="./summit-assets/asset-4.jpg" alt="Far shot of the forest and mountains"></li>
+                    <li><img src="./summit-assets/asset-4.jpg" alt="Snowy mountain with a gray sky"></li>
+                    <li><img src="./summit-assets/asset-6.jpg" alt="Far shot of snowy mountains over a large body of water"></li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <!-- FOOTER SECTION -->
     <footer>
-        <p>Copyright &copy; 2018 HackerYou</p>
+        <div class="wrapper">
+            <p>Copyright &copy; 2018 HackerYou</p>
+        </div>
     </footer>
 
 </body>

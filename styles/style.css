@@ -222,11 +222,23 @@ template {
 }
 
 html {
+  font-family: "Poppins", sans-serif;
+  color: #0F0F0F;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 62.5%;
+  line-height: 2.6rem;
 }
 
 p {
   margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  color: #0F0F0F;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 2.9rem;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 ul {
@@ -237,11 +249,20 @@ ul {
 
 a {
   text-decoration: none;
+  color: #F6F6F6;
+  font-size: 1.8rem;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid red;
 }
 
 header {
@@ -250,4 +271,77 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  padding: 50px 0;
+  color: #F6F6F6;
+}
+header .wrapper {
+  height: 100%;
+  position: relative;
+}
+
+header .topNavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .topNavBar .logo {
+  font-family: "Poppins", sans-serif;
+  color: #0F0F0F;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.6rem;
+  color: #F6F6F6;
+}
+header .topNavBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .topNavBar ul li {
+  padding: 0 20px;
+  line-height: 2.9rem;
+}
+header .topNavBar ul li:last-child {
+  padding-right: 0;
+}
+
+header .titleCard {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+header .titleCard h1 {
+  margin: 0;
+  font-size: 3.2rem;
+  line-height: 6rem;
+}
+header .titleCard h1 span {
+  display: inline-block;
+  font-size: 10rem;
+}
+
+header .socialLinks {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+header .socialLinks li {
+  padding: 10px 0;
+}
+header .socialLinks li:last-child {
+  padding-bottom: 0;
+}
+header .socialLinks i {
+  color: #215A6D;
 }

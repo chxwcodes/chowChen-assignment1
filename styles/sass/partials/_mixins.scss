@@ -1,0 +1,18 @@
+@mixin poppinsSize($sizeValue) {
+    font-family: 'Poppins',sans-serif;
+    color: $blackShade;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $sizeValue;
+    line-height: 2.6rem;
+}
+
+@mixin notoSansSize($sizeValue) {
+    font-family: 'Noto Sans', sans-serif;
+    color: $blackShade;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 2.9rem;
+    font-size: $sizeValue;
+    text-align: center;
+}
