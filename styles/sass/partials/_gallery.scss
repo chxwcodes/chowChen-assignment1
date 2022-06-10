@@ -1,0 +1,30 @@
+.galleryInfo {
+    background-color: $whiteShade;
+    display: flex;
+    flex-direction: column;
+
+    article {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .galleryImg {
+            width: 50%;
+        }
+
+        .galleryInfo {
+            width: 50%;
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    article:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+}

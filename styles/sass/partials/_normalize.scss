@@ -3,9 +3,21 @@ html {
     @include poppinsSize(62.5%);
 }
 
+h2,
+h3 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
 p {
     margin: 0;
     @include notoSansSize(1.8rem);
+    padding-bottom: 20px;
 }
 
 ul {
@@ -23,6 +35,15 @@ a {
 img {
     max-width: 100%;
     display: block;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: $accentColor;
+    text-transform: uppercase;
+    @include poppinsSize(1.8rem);
+    padding: 5px 20px;
 }
 
 .wrapper {
