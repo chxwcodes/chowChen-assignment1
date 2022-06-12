@@ -227,18 +227,17 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 62.5%;
-  line-height: 2.6rem;
 }
 
 h2,
 h3 {
   margin: 0 0 20px 0;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
 p {
@@ -247,9 +246,9 @@ p {
   color: #0F0F0F;
   text-transform: none;
   font-weight: 400;
-  line-height: 2.9rem;
   font-size: 1.8rem;
   text-align: center;
+  line-height: 2.9rem;
   padding-bottom: 20px;
 }
 
@@ -280,15 +279,13 @@ button {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8rem;
-  line-height: 2.6rem;
-  padding: 5px 20px;
+  padding: 10px 30px;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 header {
@@ -319,8 +316,9 @@ header .topNavBar .logo {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 4rem;
-  line-height: 2.6rem;
   color: #F6F6F6;
+  padding: 0;
+  line-height: 4.6rem;
 }
 header .topNavBar ul {
   display: -webkit-box;
@@ -337,6 +335,9 @@ header .topNavBar ul li {
 }
 header .topNavBar ul li:last-child {
   padding-right: 0;
+}
+header .topNavBar i {
+  display: none;
 }
 
 header .titleCard {
@@ -361,6 +362,18 @@ header .socialLinks {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+header .socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .socialLinks li {
   padding: 10px 0;
@@ -405,6 +418,8 @@ header .socialLinks i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -472,4 +487,193 @@ header .socialLinks i {
 .iconNav a {
   font-size: 2rem;
   padding-top: 10px;
+}
+
+.aboutMe {
+  background-color: #F6F6F6;
+  padding: 50px 0;
+}
+.aboutMe .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.aboutMe .aboutMeImg {
+  width: 30%;
+  margin-right: 50px;
+}
+.aboutMe .aboutMeInfo {
+  width: calc(70% - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.aboutMe .aboutMeInfo h2 {
+  text-align: left;
+}
+.aboutMe .aboutMeInfo p {
+  text-align: left;
+}
+
+.imgGallery {
+  padding: 50px 0;
+}
+.imgGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.imgGallery ul li {
+  -ms-flex-preferred-size: calc(33% - 20px);
+      flex-basis: calc(33% - 20px);
+  margin: 0 10px;
+}
+.imgGallery li:first-child {
+  margin-left: 0;
+}
+.imgGallery li:last-child {
+  margin-right: 0;
+}
+.imgGallery .smallerImgGallery {
+  display: none;
+}
+
+footer {
+  background-color: #094154;
+  padding: 5px 0;
+}
+footer p {
+  padding: 0;
+  color: #F6F6F6;
+  text-transform: none;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  header {
+    padding: 30px 0;
+  }
+
+  header .topNavBar .logo {
+    font-size: 5rem;
+  }
+  header .topNavBar ul {
+    display: none;
+  }
+  header .topNavBar i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 5rem;
+  }
+
+  header .titleCard h1 {
+    font-size: 4rem;
+    line-height: 7rem;
+  }
+  header .titleCard h1 span {
+    font-size: 11rem;
+  }
+
+  header .socialLinks {
+    display: none;
+  }
+
+  .galleryInfo article .galleryImg {
+    width: 100%;
+  }
+  .galleryInfo article .galleryInfo {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .iconNav nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .iconNav nav ul {
+    margin-bottom: 20px;
+  }
+  .iconNav nav ul:last-child {
+    margin: 0;
+  }
+
+  .aboutMe .aboutMeImg {
+    margin: 0;
+    width: 624px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutMe .aboutMeInfo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutMe .aboutMeInfo h2 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .imgGallery {
+    padding: 0;
+  }
+  .imgGallery ul:first-child {
+    display: none;
+  }
+  .imgGallery .smallerImgGallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .imgGallery .smallerImgGallery li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: 0;
+  }
+
+  footer p {
+    font-weight: 400;
+  }
+}
+@media (max-width: 578px) {
+  header .topNavBar .logo {
+    font-size: 3.5rem;
+  }
+  header .topNavBar i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 4rem;
+  }
 }

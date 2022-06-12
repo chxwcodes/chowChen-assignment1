@@ -1,0 +1,129 @@
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 95%;
+    }
+    //HEADER SECTION
+    header {
+        padding: 30px 0;
+    }
+
+    //HEADER: top nav bar
+    header .topNavBar {
+
+        .logo {
+            font-size: 5rem;
+        }
+
+        ul {
+            display: none;
+        }
+
+        i {
+           display: flex;
+           font-size: 5rem;
+        }
+    }
+    
+    //HEADER: title card
+    header .titleCard {
+        h1 {
+            font-size: 4rem;
+            line-height: 7rem;
+
+            span {
+                font-size: 11rem;
+            }
+        }
+    }
+
+    //HEADER: social links
+    header .socialLinks {
+        display: none;
+    }
+
+    //GALLERY SECTION
+    .galleryInfo article {
+        
+        .galleryImg {
+            width: 100%;
+        }
+
+        .galleryInfo {
+            width: 100%;
+            padding: 50px 0;
+        }
+    }
+
+    //ICON NAV SECTION
+    .iconNav nav{
+        flex-direction: column;
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        ul:last-child {
+            margin: 0;
+        }
+    }
+
+    //ABOUT ME SECTION
+    .aboutMe {
+
+        .aboutMeImg {
+            margin: 0;
+            width: 624px;
+            justify-content: center;
+        }
+
+        .aboutMeInfo {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    //IMG GALLERY SECTION
+    .imgGallery {
+        padding: 0;
+
+        ul:first-child {
+            display: none;
+        }
+
+        .smallerImgGallery {
+            display: flex;
+
+            li {
+                flex-basis: 50%;
+                margin: 0;
+            }
+        }
+    }
+
+    //FOOTER SECTION
+    footer p {
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 578px) {
+    //HEADER SECTION
+    //HEADER: top nav bar
+        header .topNavBar {
+    
+            .logo {
+                font-size: 3.5rem;
+            }
+    
+            i {
+                display: flex;
+                font-size: 4rem;
+            }
+        }
+}

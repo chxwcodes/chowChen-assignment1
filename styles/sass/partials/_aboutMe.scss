@@ -1,0 +1,31 @@
+.aboutMe {
+    background-color: $whiteShade;
+    padding: 50px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutMeImg {
+        width: 30%;
+        margin-right: 50px;
+    }
+
+    .aboutMeInfo {
+        width: calc(70% - 50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+}

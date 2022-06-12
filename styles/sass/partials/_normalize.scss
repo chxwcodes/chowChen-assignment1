@@ -7,16 +7,17 @@ h2,
 h3 {
     margin: 0 0 20px 0;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.6rem;
 }
 
 p {
     margin: 0;
     @include notoSansSize(1.8rem);
+    line-height: 2.9rem;
     padding-bottom: 20px;
 }
 
@@ -43,12 +44,11 @@ button {
     background-color: $accentColor;
     text-transform: uppercase;
     @include poppinsSize(1.8rem);
-    padding: 5px 20px;
+    padding: 10px 30px;
 }
 
 .wrapper {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-    border: 2px solid red;
 }

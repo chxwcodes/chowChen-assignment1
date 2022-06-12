@@ -4,7 +4,6 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: $sizeValue;
-    line-height: 2.6rem;
 }
 
 @mixin notoSansSize($sizeValue) {
@@ -12,7 +11,6 @@
     color: $blackShade;
     text-transform: none;
     font-weight: 400;
-    line-height: 2.9rem;
     font-size: $sizeValue;
     text-align: center;
 }
